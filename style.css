@@ -1,0 +1,32 @@
+* {
+	font-family: "Roboto", sans-serif;
+	box-sizing: border-box;
+	color: #3c4043;
+}
+
+.container {
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+article {
+	padding-top: 64px;
+}
+
+h2 {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+p, li {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+p > a {
+	color: rgb(51, 103, 214);
+}
