@@ -63,12 +63,32 @@ $faqs = [
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="./style.css">
 	<title>Document</title>
 </head>
 
 <body>
-	<div class="container">
+	<header>
+		<div class="wrapper">
+			<h1>Google</h1>
+			<div>
+				<i class="bi bi-square"></i>
+				<i class="bi bi-person-circle"></i>
+			</div>
+		</div>
+		<div>
+			<ul>
+				<li><a href="#">Overview</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms of Service</a></li>
+				<li><a href="#">Technologies</a></li>
+				<li><a href="#" class="active">FAQ</a></li>
+			</ul>
+		</div>
+		<div class="horizontal-divisor"></div>
+	</header>
+	<main class="container">
 		<?php foreach ($faqs as $faq) : ?>
 			<article>
 				<h2><?= $faq['title'] ?></h2>
@@ -77,7 +97,7 @@ $faqs = [
 				<?php endforeach; ?>
 			<?php endforeach; ?>
 			</article>
-	</div>
+	</main>
 </body>
 
 </html>

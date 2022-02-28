@@ -4,14 +4,19 @@
 	color: #3c4043;
 }
 
-.container {
-	width: 100%;
-	max-width: 1080px;
-	margin: 0 auto;
+body {
+	margin: 0;
+	padding: 0;
 }
 
 article {
 	padding-top: 64px;
+}
+
+h1 {
+	padding: 10px;
+	cursor: pointer;
+	margin: 0;
 }
 
 h2 {
@@ -27,6 +32,56 @@ p, li {
 	line-height: 24px;
 }
 
-p > a {
+main a {
 	color: rgb(51, 103, 214);
+}
+
+header ul {
+	margin: 0;
+}
+
+header li {
+	font-family: "Open Sans", sans-serif;
+	display: inline-block;
+	font-size: 15px;
+	margin: 5px 20px;
+}
+
+header li a {
+	text-decoration: none;
+	color: rgb(95, 99, 104);
+	padding: 5px 0;
+}
+
+header .bi {
+	font-size: 34px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+hr {
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.horizontal-divisor {
+	background-color: rgba(0, 0, 0, 0.219);
+	height: 1px;
+	width: 100%;
+}
+
+.active {
+	color: rgb(51, 103, 214);
+	border-bottom: 3px solid rgb(51, 103, 214);
 }
